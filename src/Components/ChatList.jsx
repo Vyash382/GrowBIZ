@@ -150,19 +150,19 @@ const ChatList = ({setShowChatBox,setChatId,setChatName,setShowChat,setPicture})
               bottom: '80px',
               right: '26px',
               width: '300px',
-              maxHeight: '400px', // Set a maximum height for the container
+              maxHeight: '400px', 
               padding: '16px',
               boxShadow: '0px 4px 8px rgba(0,0,0,0.2)',
-              zIndex: '1000',
-              overflowY: 'auto', // Enable vertical scrolling
+              zIndex: '1000'
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center',     marginBottom: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center',     marginBottom: '5px', position:'sticky', top:'0' }}>
                 <IconButton onClick={handleBack}>
                 <ArrowBackIcon />
                 </IconButton>
-              <h3>Chat List</h3>
+              <h3 >Chat List</h3>
             </div>
+            <div style={{overflowY:'auto',maxHeight: '300px'}}>
             {chats.map((element, index) => (
               <ChatItem
                 key={index}
@@ -174,6 +174,7 @@ const ChatList = ({setShowChatBox,setChatId,setChatName,setShowChat,setPicture})
               />
 
             ))}
+            </div>
           </Paper>
         </div>
     );

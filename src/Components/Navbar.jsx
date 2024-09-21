@@ -59,7 +59,7 @@ function Navbar() {
             />
             <Button color="primary" sx={{ marginRight: 2 }}>Explore Other Businesses for sale</Button>
             <Button color="primary" sx={{ marginRight: 2 }}>Explore skilled workers</Button>
-            <Button color="primary" sx={{ marginRight: 2 }}>About GrowBIZ</Button>
+            <Button color="primary" sx={{ marginRight: 2 }}>Notifications</Button>
             <Button color="primary" sx={{ marginRight: 2 }}>Add a new Business</Button>
             {user ? (
               <>
